@@ -1,10 +1,11 @@
 # ballerina-test
 
-# run 
+## run 
 
-ballerina run hello_service.bal
+ballerina run --config twitter.toml hello_service.bal
 
-curl http://localhost:9090/hello/sayHello
+curl -d "Ballerina" -X POST localhost:9090/
 
-# build 
+## 備考
 
+各自の設定に合わせてtwitter.tomlを用意する必要があります。
